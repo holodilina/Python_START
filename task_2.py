@@ -8,3 +8,11 @@
 4
 [1, 2, 6, 24]
 """
+
+import math
+
+userNumber = int(input('Enter any number: '))
+
+for i in range(1, userNumber + 1):
+    print(f'{i} - {math.factorial(i)}')
+

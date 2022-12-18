@@ -6,3 +6,26 @@
 Ввод: значение типа <int>
 Вывод: значение типа <int>
 """
+
+from random import randint
+n = int(input('Введите количество элементов в списке:\n'))
+ 
+a = int(input('Введите от:\n'))
+ 
+b = int(input('Введите до:\n'))
+ 
+test = []
+new_el =[randint(a,b) for i in range(n)]
+ 
+ 
+test.append(new_el)
+ 
+print("Список случайных целых чисел в диапазон от",a,"до",b,':')
+ 
+print(test)
+i=0
+b = []
+for i in test[0]:
+    if i > 0:
+        b.append(i/2)
+print(b)
